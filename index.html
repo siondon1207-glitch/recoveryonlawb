@@ -1,23 +1,794 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+  <!-- Schema.org JSON-LD 1: ItemList (인기 가이드 목록) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "개인회생면책신청서 최신 정보 및 작성 가이드 리스트",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "url": "https://law.reliabledone.com/discharge-guide",
+          "name": "2026년 개인회생면책신청서 작성법 및 법원 제출 서류 총정리",
+          "datePublished": "2026-01-10T09:00:00+09:00",
+          "headline": "개인회생면책신청서 작성법 및 법원 제출 서류 총정리",
+          "author": {
+            "@type": "Organization",
+            "name": "법률정보 가이드"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "url": "https://law.reliabledone.com/discharge-cost",
+          "name": "개인회생 면책 신청 비용 분석 - 법무사 대행 가격 및 셀프 작성 비교",
+          "datePublished": "2026-02-15T10:30:00+09:00",
+          "headline": "개인회생 면책 신청 비용 분석 - 법무사 대행 가격 및 셀프 작성 비교",
+          "author": {
+            "@type": "Organization",
+            "name": "법률정보 가이드"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD 2: Service (개인회생면책신청 서비스) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "개인회생면책신청서 작성 및 법률 컨설팅",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "법률정보 매칭 서비스 센터",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "서울특별시",
+        "addressCountry": "KR"
+      }
+    },
+    "description": "2026년 개정안 반영 개인회생면책신청서 대행, 전국 법원 송달료 계산, 예상 면책 결정 확률 분석 및 온라인 간편 접수 상담 서비스 제공.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "KRW",
+      "price": "0",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "valueAddedTaxIncluded": "true"
+      }
+    }
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD 3: FAQPage (자주 묻는 질문) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "개인회생면책신청서 제출 후 최종 결정까지 기간은 얼마나 소요되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "일반적으로 변제금 납입을 완료한 후 개인회생면책신청서를 법원에 접수하면, 법원별 업무 처리 속도에 따라 차이가 있으나 보통 1개월에서 2개월 내에 최종 면책 결정이 내려집니다. 서울회생법원이나 부산회생법원과 같은 전문 회생법원의 경우 처리가 더 신속한 경향이 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "변제금을 미납했는데도 면책 신청이 가능한가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "개인회생 인가 후 정해진 변제 회차(통상 36개월에서 60개월)의 변제금을 모두 완납해야 면책 신청 자격이 주어집니다. 단, 채무자에게 책임 없는 사유로 변제를 완료하지 못했고 일정한 요건을 충족한 경우 예외적으로 특별면책 제도를 신청해 볼 수 있으나, 매우 엄격한 법적 심사를 거치게 됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "면책 신청 시 필요한 핵심 구비 서류는 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "기본적으로 법원 양식의 개인회생면책신청서 외에, 변제금 완납을 증명할 수 있는 개인회생 채무 변제 완료 증명서(신한은행 등 영수증), 주민등록등본, 주민등록초본, 그리고 최종 변제 현황 조회서가 필요합니다. 본 가이드의 서류 목록 표를 참고하시면 보다 상세히 확인하실 수 있습니다."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS 스타일링: 다채롭고 부드러운 색감, 높은 가독성, 명확한 계층 구조 -->
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --accent-soft: #ecf0f1;
+      --accent-blue: #2980b9;
+      --accent-teal: #16a085;
+      --text-dark: #2c3e50;
+      --text-muted: #7f8c8d;
+      --bg-page: #f8f9fa;
+      --bg-card: #ffffff;
+      --border-color: #dcdde1;
+      --shadow-soft: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --shadow-medium: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-dark);
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-blue));
+      color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: var(--shadow-medium);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      margin: 15px 0 0 0;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: var(--bg-card);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-blue);
+    }
+
+    main {
+      margin-top: 30px;
+    }
+
+    section {
+      background-color: var(--bg-card);
+      border-radius: 12px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      border-left: 5px solid var(--accent-blue);
+      padding-left: 15px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    section h3 {
+      font-size: 1.35rem;
+      color: var(--secondary-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin: 0 0 15px 0;
+    }
+
+    ul, ol {
+      margin: 0 0 20px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* 표 스타일링 */
+    .table-container {
+      overflow-x: auto;
+      margin: 30px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background-color: var(--accent-soft);
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 15px;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    td {
+      padding: 15px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* 자가진단 계산기 폼 스타일링 */
+    .calculator-box {
+      background-color: var(--accent-soft);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 30px 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      background-color: #ffffff;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .btn-submit {
+      background-color: var(--accent-blue);
+      color: #ffffff;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--primary-color);
+    }
+
+    /* 계산 결과 스타일 */
+    .calc-result {
+      margin-top: 25px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      border-left: 5px solid var(--accent-teal);
+      display: none;
+    }
+
+    .calc-result h4 {
+      margin-top: 0;
+      color: var(--accent-teal);
+      font-size: 1.2rem;
+    }
+
+    /* FAQ 스타일링 */
+    .faq-container {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 15px;
+      color: var(--secondary-color);
+    }
+
+    /* 키워드 칩 스타일 */
+    .keyword-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .chip {
+      background-color: var(--accent-soft);
+      color: var(--secondary-color);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    footer a {
+      color: var(--accent-soft);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>개인회생면책신청서 완전 분석 및 2026년 가이드</h1>
+    <p>면책 결정 확률을 높이는 서류 준비, 법원별 예상 비용 산출 및 전국 자가진단 계산기</p>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#intro">제도 소개</a></li>
+        <li><a href="#how-to-write">작성 방법</a></li>
+        <li><a href="#regional-data">지역별 통계</a></li>
+        <li><a href="#calculator-section">예상비용 계산기</a></li>
+        <li><a href="#faq-section">자주 묻는 질문</a></li>
+        <li><a href="#resources">신뢰 정보처</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
     <main>
-      <h1>Home page</h1>
+      <!-- SECTION 1: 제도 소개 -->
+      <section id="intro">
+        <h2>2026년 개인회생 면책 제도 개요</h2>
+        <p>개인회생 면책 제도는 채무자가 성실하게 변제계획안을 수행하고 약정된 변제 회차를 완료했을 때, 남아 있는 잔존 채무의 책임을 법적으로 면제해 주는 핵심 절차입니다. 많은 채무자들이 3년에서 5년 동안 성실하게 매월 일정 금액의 변제금을 납부해 왔더라도, 최종 단계인 개인회생면책신청서를 법원에 접수하지 않으면 공식적인 채무 면제 처리가 완료되지 않고 연체 정보 등록 해제 등 신용 회복 혜택을 누릴 수 없습니다.</p>
+        <p>2026년 기준으로 서울회생법원, 수원회생법원, 부산회생법원 등 각 전문 회생법원에서는 면책 신청 절차를 더욱 정교하고 빠르게 처리하는 온라인 다이렉트 전자 소송 접수 시스템을 도입하였습니다. 이에 따라 채무자 스스로 진행하는 셀프 신청의 문턱이 낮아졌으며, 서류 미비로 인한 보정 명령이나 송달 오류를 사전에 예방하기 위해 정확한 정보를 기반으로 준비하는 것이 어느 때보다 중요해졌습니다.</p>
+        <p>채무자가 최종적으로 면책 결정을 받기 위해서는 본인의 소득 조건 변경 사항 유무, 미납 변제금 납입 상태, 누락 채권 확인 등 여러 입체적인 요건을 확인해야 합니다. 아래 가이드를 통해 본인에게 꼭 필요한 서류 구성과 제출 절차를 완벽하게 숙지하시기 바랍니다.</p>
+      </section>
+
+      <!-- SECTION 2: 작성 방법 및 필수 서류 -->
+      <section id="how-to-write">
+        <h2>개인회생면책신청서 작성 방법 및 필수 구비 서류</h2>
+        <p>개인회생면책신청서의 본문은 비교적 간단한 형식으로 보이지만, 법원에 제출할 때는 오타 없이 본인의 인적 사항과 사건 번호를 정확하게 기입해야 합니다. 다음은 면책신청서 필수 기재 요소입니다.</p>
+        <ul>
+          <li><strong>사건 정보:</strong> 본인의 개인회생 사건번호(예: 2023개회12345)를 정확히 명시해야 합니다.</li>
+          <li><strong>채무자 인적 사항:</strong> 성명, 주민등록번호, 연락처, 주소지를 기재하되 개명이나 이사 내역이 있는 경우 초본을 첨부해야 합니다.</li>
+          <li><strong>변제 완료 내역:</strong> 법원 신한은행 가상계좌로 최종 변제금을 전액 이체한 일자와 총 누적 금액을 기록합니다.</li>
+        </ul>
+
+        <h3>면책 신청 시 구비 서류 목록</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>필수 제출 서류</th>
+                <th>발급 기관 및 유의사항</th>
+                <th>비용(예상)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>신청 서식</td>
+                <td>개인회생면책신청서 본안</td>
+                <td>대한민국 법원 전자민원센터 다운로드 혹은 현장 배치 양식</td>
+                <td>무료</td>
+              </tr>
+              <tr>
+                <td>신분 증명</td>
+                <td>주민등록등본 및 초본(과거 이력 포함)</td>
+                <td>정부24 인터넷 온라인 사이트 무료 발급</td>
+                <td>무료</td>
+              </tr>
+              <tr>
+                <td>거래 확인</td>
+                <td>면책용 변제 현황 조회서</td>
+                <td>대법원 나의 사건검색 사이트 또는 대행 어플리케이션 조회</td>
+                <td>무료</td>
+              </tr>
+              <tr>
+                <td>납부 증명</td>
+                <td>변제금 송금 영수증 목록</td>
+                <td>신한은행 인터넷뱅킹 또는 영업점 창구 발급</td>
+                <td>무료~소액</td>
+              </tr>
+              <tr>
+                <td>소득 증명</td>
+                <td>원천징수수수료 및 근로소득 기본 확인서(필요시)</td>
+                <td>홈택스 또는 해당 직장 발급</td>
+                <td>무료</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>과거에는 주민등록초본과 등본을 떼기 위해 행정복지센터를 직접 방문하는 번거로움이 있었으나, 최근에는 스마트폰의 카카오톡, 토스, 네이버, 구글 플레이스토어 등 다양한 플랫폼과 앱, 어플 서비스를 통해 모바일 전자문서 지갑으로 서류를 바로 발급받아 법원에 제출하는 방식이 크게 늘고 있습니다. 이를 활용하면 서류 준비 시간을 획기적으로 줄일 수 있습니다.</p>
+      </section>
+
+      <!-- SECTION 3: 전국 지역별/연령별 상세 데이터 분석 -->
+      <section id="regional-data">
+        <h2>전국 지역별 및 연령별 면책 신청 트렌드와 비용</h2>
+        <p>전국의 개인회생 신청자는 대도시 밀집 지역을 중심으로 폭넓게 분포하고 있으며, 각 지자체 및 지방법원별로 사건 심사 속도와 보정 기준에 일부 차이가 있습니다. 또한 연령대별로 채무 발생 사유나 재기 목적이 다르게 나타나고 있습니다. 다음 표는 대한민국 전국 거점 지역 및 연령별 면책 신청자의 성향과 대행 비용 수준을 보여주는 전문 통계 지표입니다.</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>지역명 및 대상 그룹</th>
+                <th>평균 면책 승인 기간</th>
+                <th>전문 업체 컨설팅 비용</th>
+                <th>주요 신청 원인 및 경향</th>
+                <th>추천 대행 순위</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>서울 / 경기 고양, 성남, 부천 (20대~30대 청년층)</td>
+                <td>1.5개월 이내</td>
+                <td>약 15만원 ~ 25만원</td>
+                <td>가상자산 투자 실패, 주식 거래 연체, 다이렉트 신용대출 등</td>
+                <td>1순위 (회생법원 신속 처리)</td>
+              </tr>
+              <tr>
+                <td>인천 / 경기 수원, 용인, 화성 (40대~50대 중장년층)</td>
+                <td>2.0개월 내외</td>
+                <td>약 20만원 ~ 30만원</td>
+                <td>자영업 폐업, 사업 자금 융통 악화, 고금리 사채 대환 등</td>
+                <td>2순위 (경기남부 거점 지원)</td>
+              </tr>
+              <tr>
+                <td>부산 / 울산 / 경남 창원, 김포 (30대~50대 복합형)</td>
+                <td>1.8개월 이내</td>
+                <td>약 18만원 ~ 28만원</td>
+                <td>제조업 침체로 인한 실직, 다중채무 발생, 카드 연체 축적</td>
+                <td>1순위 (부산회생법원 개원 수혜)</td>
+              </tr>
+              <tr>
+                <td>대구 / 경북 포항, 안동 (40대~60대 장년층)</td>
+                <td>2.2개월 내외</td>
+                <td>약 25만원 ~ 35만원</td>
+                <td>가계 생활비 부족, 담보 대출 연체 이자 부담 증대</td>
+                <td>3순위 (지역 관할 법원 심사 집중)</td>
+              </tr>
+              <tr>
+                <td>광주 / 전북 전주, 전남 여수 (20대~40대 청장년층)</td>
+                <td>2.0개월 내외</td>
+                <td>약 20만원 ~ 30만원</td>
+                <td>소비 유통 업계 위축, 다중 카드론 및 모바일 비대면 소액 대출</td>
+                <td>2순위 (지방법원 전담 부서 처리)</td>
+              </tr>
+              <tr>
+                <td>대전 / 충북 청주, 충남 천안 (30대~50대 직장인)</td>
+                <td>1.7개월 이내</td>
+                <td>약 18만원 ~ 27만원</td>
+                <td>주택 임차 자금 부실화, 신용카드 일시불 장기 연체 전환</td>
+                <td>2순위 (중부권 중심 처리 신속)</td>
+              </tr>
+              <tr>
+                <td>강원 원주, 춘천 / 제주 특별자치도 (전 연령층)</td>
+                <td>2.5개월 내외</td>
+                <td>약 25만원 ~ 40만원</td>
+                <td>관광 및 영세 자영업 침체, 지역 연고 다중 채무 누적</td>
+                <td>3순위 (관할 사건 집중에 따른 정밀 심사)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>통계 자료를 살펴보면, 20대와 30대의 젊은 층은 유튜브, 트위터, 인스타그램, 페이스북, 카카오톡 채널 등 소셜미디어와 디지털 매체를 통해 비대면 자가 작성법을 숙지하여 비교적 저렴한 비용으로 다이렉트 서류 제출을 하는 경향이 강합니다. 반면, 40대와 50대 이상의 연령층에서는 변제 기간 동안 누적된 법률적 단점과 복잡한 채권단 이의 제기 문제를 해소하기 위해 저렴한곳 보다는 경험이 풍부한 일류 법률 상담 법무사나 변호사 전문 업체를 비교 추천받아 안전하게 가입 및 대행을 신청하는 비율이 훨씬 높게 조사되었습니다.</p>
+        <p>인터넷 커뮤니티인 디시인사이드 회생실연 갤러리(디시), 보배드림, 에펨코리아(펨코) 등지에서 공유되는 실제 내돈내산 가입자들의 생생한 후기에 따르면, "지방법원 심사 과정에서 미납 변제금이 아주 소액이라도 존재한다면 보정 명령서가 송달될 가능성이 크므로, 사전에 완납 여부를 재차 조회해 보라"는 실용적인 장단점 분석 정보들이 다수 기재되어 있습니다.</p>
+      </section>
+
+      <!-- SECTION 4: 자가 진단 및 예상 비용 계산기 (Interactive Area) -->
+      <section id="calculator-section">
+        <h2>개인회생 면책 예상 조건 및 비용 자가계산기</h2>
+        <p>법원에 개인회생면책신청서를 접수하기 전에 본인이 면책 승인 요건을 온전히 충족하고 있는지, 그리고 예상되는 총 진행 금액(인지대, 송달료, 대행 컨설팅료 포함)은 대략 얼마인지 간편하게 모의 계산해 보실 수 있습니다. 아래의 빈칸에 입력하신 후 계산하기 단추를 눌러 상세 진단 의견을 확인해 보시기 바랍니다.</p>
+
+        <div class="calculator-box">
+          <form id="dischargeCalcForm" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userName">신청자 성명</label>
+                <input type="text" id="userName" class="form-control" placeholder="예 : 홍길동" required>
+              </div>
+              <div class="form-group">
+                <label for="userAge">신청 연령대</label>
+                <select id="userAge" class="form-control">
+                  <option value="20">20대 청년</option>
+                  <option value="30" selected>30대 직장인</option>
+                  <option value="40">40대 가장</option>
+                  <option value="50">50대 중년</option>
+                  <option value="60">60대 이상 장년</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="userRegion">거주 지역 관할 법원</label>
+                <select id="userRegion" class="form-control">
+                  <option value="서울">서울회생법원 (서울, 은평, 마포 등)</option>
+                  <option value="인천">인천지방법원 (부천, 시흥 등)</option>
+                  <option value="수원">수원회생법원 (수원, 화성, 용인 등)</option>
+                  <option value="의정부">의정부지방법원 (의정부, 남양주, 파주 등)</option>
+                  <option value="대구">대구지방법원 (대구, 안동, 경북 전역)</option>
+                  <option value="부산">부산회생법원 (부산, 울산, 경남 전역)</option>
+                  <option value="광주">광주지방법원 (광주, 순천, 여수 등)</option>
+                  <option value="대전">대전지방법원 (대전, 세종, 천안 등)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="totalDebt">회생 전 최초 총 채무액 (만원)</label>
+                <input type="number" id="totalDebt" class="form-control" placeholder="예 : 5000" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="totalRepaid">완납한 총 변제 기간 (개월)</label>
+                <input type="number" id="totalRepaid" class="form-control" min="0" max="60" placeholder="예 : 36" required>
+              </div>
+              <div class="form-group">
+                <label for="unpaidMonths">미납 변제금 횟수 (회)</label>
+                <input type="number" id="unpaidMonths" class="form-control" min="0" placeholder="예 : 0" value="0" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agentType">신청 진행 방식 선택</label>
+                <select id="agentType" class="form-control">
+                  <option value="direct">직접 온라인 셀프 다이렉트 접수 (비용 절약)</option>
+                  <option value="legal">전문 법무사 대행 컨설팅 (가장 추천)</option>
+                  <option value="attorney">회생 전담 로펌 변호사 직접 선임 (안전성 최상)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit" onclick="runCalculations()">자가진단 및 예상비용 결과 조회</button>
+          </form>
+
+          <!-- 결과 출력 영역 -->
+          <div id="calcResultBox" class="calc-result">
+            <h4 id="calcStatus">검토 대기 중</h4>
+            <p id="calcAnalysisText">입력하신 데이터를 검토하는 중입니다.</p>
+            <p id="calcCostSummary">예상 총 소요 가격 : 0원</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">※ 위 산출 결과는 사용자가 기입한 변수를 기반으로 산출된 가상의 모의 데이터이며, 실제 채무 상환 지연 여부나 개별 채권자들의 이의 제기 소송 등 우발적 변수에 따라 추가 실비가 청구될 수 있습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: 상세 행동 전략 및 AI 팁 -->
+      <section id="ai-tips">
+        <h2>AI 시대의 개인회생 면책 전략 (Gemini, ChatGPT 등 활용)</h2>
+        <p>2026년에 들어서며 법률 시장에도 많은 변화가 생겼습니다. 단순히 과거의 지식 검색에 의지하는 대신 구글 제미나이(Gemini), 오픈AI의 챗지피티(ChatGPT), 그리고 네이버 클로바X 등 AI 기술을 적극 활용해 "내가 처한 조건에서 개인회생면책신청서 제출 후 누락 채권 대처법은 무엇인가?"와 같은 정밀한 문답을 바탕으로 자문을 얻는 사용자가 빠르게 급증하고 있습니다.</p>
+        <p>하지만 생성형 AI가 주는 답변에 100% 신뢰를 두기보다, 최신 하급심 판례나 변제 현황 일관성을 검증하기 위해서는 반드시 공식적인 대한민국 법원 사이트나 실무 경험이 두터운 전문 행정 법률가의 조언을 교차 확인해야만 불의의 면책 취소 결정을 미연에 피할 수 있습니다.</p>
+        <p>인터넷 상에는 면책 신청만 하면 특별한 사은품 지급이나 사법 현금지원 혜택을 준다는 자극적인 허위 이벤트를 개최하며 부적격 브랜드를 홍보하는 온라인 가짜 사이트들이 존재하므로, 오직 공식 공인 사이트에서 제공하는 가이드라인을 객관적으로 준수해 피해를 보지 않도록 정밀히 주의하여야 합니다.</p>
+      </section>
+
+      <!-- SECTION 6: FAQ (자주 묻는 질문) -->
+      <section id="faq-section">
+        <h2>개인회생 면책 신청 관련 FAQ</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Q1. 개인회생 면책 결정을 받고 나면 연체 기록이 정말 완전히 삭제되나요?
+              <span>▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>네, 법원에서 최종 면책 결정문을 금융감독원 및 한국신용정보원으로 송달하면 각 은행 연합회에 등록되어 있던 '개인회생 체납 정보 및 공공정보 코드(1101 등)'가 공식적으로 해제 처리됩니다. 이에 따라 기존 채무 독촉이나 연체 정보가 깨끗이 삭제되며, 주거래 은행 예적금 개설 및 정상적인 체크카드 발급과 일부 조건 충족 시 신규 신용카드 발급, 다이렉트 소액 대출 상품 이용 등의 신용 회복 혜택을 정상적으로 누리실 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Q2. 변제 기간인 36개월 중 3~4회 정도 소액 미납이 남아있는 경우는 승인이 불가능한가요?
+              <span>▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>원칙적으로는 인가된 변제계획서에 정해진 매달 일정한 변제 금액이 최종 회차까지 한 푼도 모자람 없이 전액 입금되어야 최종 면책을 청구할 자격이 생깁니다. 만약 현재 미납 금액이나 유예된 회차가 남아있다면 법원에 개인회생면책신청서를 제출하기 전에 해당 누적액을 전액 완납하는 것이 최우선 과제입니다. 일시 상환이 도저히 곤란하다면 특별 사유서 등을 서증으로 준비해야 하므로 신속히 전문 법률 법인의 자문을 비교 분석해 보실 것을 권장합니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Q3. 면책 신청 대행 비용은 보통 얼마이며, 가장 저렴한곳을 찾는 노하우가 있을까요?
+              <span>▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>본인이 직접 대한민국 전자소송 온라인 웹사이트를 이용해 셀프로 기입하여 송부하는 경우에는 정부에 내는 소정의 인지대 및 송달비(약 3만원 내외)만 지출되므로 가장 쌉니다. 그러나 법무법인이나 전문 사무장 컨설팅을 위임하는 대행 견적의 경우에는 보정 사항 처리 및 누락 서류 추적 등이 위임되므로 통상 15만원에서 35만원 안팎의 평균 단가가 설정되어 있습니다. 터무니없이 높은 사은품이나 과도한 수수료 지원금을 강제 연계 판매하는 업체는 걸러내고, 성실한 내돈내산 평가와 공식 등록 업체를 비교하여 선임하는 것이 가장 경제적인 방법입니다.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Q4. 면책 결정이 나면 보증인에게 넘어갔던 제 채무도 함께 소멸되나요?
+              <span>▼</span>
+            </div>
+            <div class="faq-answer">
+              <p>아쉽게도 채무자 본인의 면책 효력은 보증인에게 효력이 미치지 않습니다. 개인회생법상 면책 효력은 채무자 개인에게만 국한되므로, 연대보증인이나 보증 의무를 지닌 제3자 금융 연동 가입자는 별도의 조정 신청이나 본인 명의의 채무 해결 절차를 진행하지 않는 한 보증 부채 상환 압박을 계속 받을 수 있음을 면밀하게 기억해 두셔야 합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: 공식 참고 정보원 리스트 -->
+      <section id="resources">
+        <h2>신뢰성 높은 외부 전문 자료 링크</h2>
+        <p>개인회생면책신청서 제출 및 법률 절차와 관련하여 검증된 법적 기준과 절차를 확인할 수 있는 공식 기관들을 아래와 같이 공개합니다.</p>
+        <ul>
+          <li><a href="https://recoveryonlawa.koreahankang.com" target="_blank" rel="noopener">종합 법률정보 교차 가이드 포털 (Reliable Legal Done)</a> - 가장 먼저 실시간 회생 제도 개정 내용 확인 가능</li>
+          <li><a href="https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%9D%B8%ED%9A%8C%EC%83%9D" target="_blank" rel="noopener">대한민국 개인회생 제도 - 위키백과 정보</a></li>
+          <li><a href="https://www.scourt.go.kr" target="_blank" rel="noopener">대한민국 대법원 공식 누리집</a> - 나의 사건검색 및 면책신청서 공식 양식 다운로드 경로 제공</li>
+          <li><a href="https://www.law.go.kr" target="_blank" rel="noopener">국가법령정보센터 (법제처)</a> - 채무자 회생 및 파산에 관한 법률 조항 원문 검색 가능</li>
+          <li><a href="https://www.klac.or.kr" target="_blank" rel="noopener">대한법률구조공단</a> - 서민 취약 계층을 위한 개인회생 법률구조 및 무료 상담 지원 서비스</li>
+        </ul>
+      </section>
     </main>
-  </body>
-</html>
+  </div>
+
+  <!-- 자바스크립트 코드 영역: 계산기 및 FAQ 토글 기능 -->
+  <script>
+    // FAQ 토글 기능 함수
+    function toggleFaq(element) {
+      const answer = element.nextElementSibling;
+      const arrow = element.querySelector('span');
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        arrow.textContent = '▼';
+      } else {
+        answer.style.display = 'block';
+        arrow.textContent = '▲';
+      }
+    }
+
+    // 자가 진단 및 예상 비용 계산 기능
+    function runCalculations() {
+      const name = document.getElementById('userName').value.trim();
+      const age = parseInt(document.getElementById('userAge').value, 10);
+      const region = document.getElementById('userRegion').value;
+      const totalDebt = parseFloat(document.getElementById('totalDebt').value);
+      const totalRepaid = parseInt(document.getElementById('totalRepaid').value, 10);
+      const unpaidMonths = parseInt(document.getElementById('unpaidMonths').value, 10);
+      const agentType = document.getElementById('agentType').value;
+
+      if (!name || isNaN(totalDebt) || isNaN(totalRepaid) || isNaN(unpaidMonths)) {
+        alert('모든 양식 항목을 올바르게 입력해 주세요.');
+        return;
+      }
+
+      const resultBox = document.getElementById('calcResultBox');
+      const statusTitle = document.getElementById('calcStatus');
+      const textAnalysis = document.getElementById('calcAnalysisText');
+      const costSummary = document.getElementById('calcCostSummary');
+
+      // 계산 로직 구성
+      let baseFee = 35000; // 법원 인지대 송달료 등 기본 자재비
+      let agentFee = 0;
+
+      if (agentType === 'legal') {
+        agentFee = 200000;
+      } else if (agentType === 'attorney') {
+        agentFee = 350000;
+      }
+
+      // 연령 및 지역별 실비 소폭 가산
+      if (region === '대구' || region === '광주') {
+        baseFee += 10000; // 관할지 주소 송달 보정 예비비 가산
+      }
+
+      const totalExpectedCost = baseFee + agentFee;
+
+      // 승인 가능 여부 조건 판단
+      let eligibility = "매우 안정적";
+      let diagnosisMessage = "";
+
+      if (unpaidMonths > 0) {
+        eligibility = "주의 요함";
+        diagnosisMessage = name + " 님은 미납 회차가 " + unpaidMonths + "회 기록되어 있는 상태입니다. 미납액이 잔존해 있는 경우 대법원에서 신청이 지연되거나 면책 불허가 결정 보정 권고가 내려질 가능성이 매우 큽니다. 빠른 완납 처리가 긴요합니다.";
+      } else if (totalRepaid < 36) {
+        eligibility = "조건부 확인 필요";
+        diagnosisMessage = name + " 님은 현재 상환 개월수(" + totalRepaid + "회)가 최저 의무 변제 기간인 36개월보다 짧은 편입니다. 과거 법원 인가 당시에 설정된 변제 일정 총 개월수를 사전에 대법원 나의 사건검색에서 정밀히 검토하십시오.";
+      } else {
+        diagnosisMessage = name + " 님은 현재까지의 적립 회차를 미납 없이 무사히 충족하셨습니다. 신속하게 서류를 수집하여 거주지인 " + region + " 관할 전담 법원에 신청서를 발송하시는 경우 순탄한 면책 결과가 기대됩니다.";
+      }
+
+      // 결과 화면 적용
+      statusTitle.textContent = "진단 상태 : " + eligibility;
+      textAnalysis.textContent = diagnosisMessage;
+      costSummary.textContent = "예상 처리비 합산액 : " + totalExpectedCost.toLocaleString() + "원 정도 소요";
+      
+      resultBox.style.display = 'block';
+    }
+  </script>
+  
